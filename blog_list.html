@@ -30,14 +30,8 @@
     <div id="nav" class="side-bar">
       <h2>Categories</h2>
       <div id="list">
-        <li>
-          <img src="images/worldwide.png" /><a href="#"
-            >Internet IT</a
-          >
-        </li>
-        <li>
-          <img src="images/web.png" /> <a href="#">Web World</a>
-        </li>
+        <li><img src="images/worldwide.png" /><a href="#">Internet IT</a></li>
+        <li><img src="images/web.png" /> <a href="#">Web World</a></li>
         <li>
           <img src="images/code.png" />
           <a href="#">Programming</a>
@@ -56,9 +50,7 @@
             <img src="images/green_logo.png" />
             <a href="#">Profile</a>
           </li>
-          <li>
-            <img src="images/blog.png" /><a href="#">Total Post</a>
-          </li>
+          <li><img src="images/blog.png" /><a href="#">Total Post</a></li>
           <li>
             <img src="images/publication.png" />
             <a href="#">Categories</a>
@@ -74,26 +66,29 @@
         </div>
       </div>
     </div>
-    <div class="main">
-      <div class="blog">
-        <div class="post">
-          <label id="upload-image" for="file">Upload Image</label>
-          <input type="file" id="file" name="file" />
-          <br />
-          <select id="select">
-            <option value="we_world">Web World</option>
-            <option value="cyber_world">Cyber World</option>
-            <option value="web_development">Web Development</option>
-            <option value="programming">Programming</option>
-            <option value="internet_world">Internet World</option>
-            <option value="technology">Techonnology</option>
-          </select>
-          <textarea id="post_content" placeholder="Write A Message"></textarea>
-          <button class="post_btn" type="button" id="contact_btn">Post</button>
-        </div>
-      </div>
-    </div>
-
+<div class="main">
+  <div class="blog">
+    <div class="search-area">
+      <input
+      type="text"
+      id="search"
+      placeholder="Search Something..."
+      value=""
+      />
+    <button type="button" id="search-btn">Search</button>
+  </div>
+  <li class="blog-list">
+    <img src="public/__icons__/blog.png" />
+  <a href="?post=12&category=web_world"
+    >How To Make An Awesome Portfolio Without Codding Easy Way</a
+  >
+</li>
+<li class="blog-list">
+  <img src="public/__icons__/code.png" />
+<a href="#">Learn Codding Easy Way No Need To Learn Frameworks.</a>
+</li>
+</div>
+</div>
     <script src="js/navbar.js"></script>
   </body>
 </html>
