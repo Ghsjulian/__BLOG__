@@ -1,0 +1,320 @@
+@font-face {
+  font-family: "ghs";
+  src: url("font/Contage_Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "ghs_thin";
+  src: url("font/Tangerine_Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Rusilla";
+  src: url("font/Rusilla_serif_bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Kollera";
+  src: url("font/Kollera_bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "erhard";
+  src: url("font/Erhard.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --bg: #ffffff;
+}
+li {
+  list-style: none;
+}
+.nav-bar {
+  top: 0;
+  background-color: var(--bg);
+  position: fixed;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 1.3rem;
+  margin: 0;
+  z-index: 99;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px;
+}
+.nav-bar .logo {
+  color: rgb(30, 114, 255);
+  font-weight: 500;
+  font-family: Erhard;
+}
+.nav-bar .logo span {
+  color: #913100;
+  font-size: 24px;
+  font-weight: 900;
+  font-family: Rusilla;
+}
+.nav-bar a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: rgb(33, 173, 48);
+  font-family: ghs;
+}
+.nav-bar a:hover {
+  color: rgb(219, 74, 0);
+  border-bottom: 2px solid rgb(219, 74, 0);
+  transition: ease-out 0.3s;
+  padding-bottom: 0.2rem;
+  cursor: pointer;
+}
+
+/*------CONTAINER -------*/
+
+.container {
+  margin: 2rem 0.7rem;
+  display: flex;
+  overflow: scroll;
+}
+.container .col {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 1rem 1.3rem;
+}
+.search-area {
+  padding: 0.6rem 0.1rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.3rem;
+  width: 50%;
+  float: right;
+}
+
+.blog .li {
+  color: red;
+}
+.search-area input {
+  padding: 0.5rem 0.8rem;
+  width: 100%;
+  margin: 0 0.4rem;
+  background: #ffffff;
+  color: rgb(0, 216, 205);
+  outline: none;
+  border: none;
+  font-weight: bolder;
+  font-size: 16px;
+  border: 2px solid rgb(0, 216, 205);
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: ghs;
+}
+.search-area button {
+  padding: 0.2rem 0.4rem;
+  outline: none;
+  border: none;
+  border: 2px solid rgb(0, 216, 205);
+  border-radius: 8px;
+  background: rgb(0, 48, 46);
+  color: #ffffff;
+  font-weight: 900;
+  cursor: pointer;
+  font-family: ghs;
+}
+.col p {
+  font-weight: 700;
+  color: rgb(70, 70, 70);
+  font-size: 16px;
+  word-spacing: 5px;
+  line-height: 1.5rem;
+  font-family: Rusilla;
+}
+.col h2 {
+  text-align: center;
+  color: rgb(0, 124, 181);
+  font-family: Rusilla;
+}
+.col img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.col .contact {
+  padding: 0.3rem;
+  background: transparent;
+  text-align: center;
+}
+.col .contact input {
+  padding: 0.3rem;
+  width: 95%;
+  margin: 0.7rem 0.4rem;
+  background-color: #ffffff;
+  color: rgb(0, 216, 205);
+  outline: none;
+  border: none;
+  font-weight: bolder;
+  font-size: 16px;
+  border: 2px solid rgb(0, 216, 205);
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: ghs;
+}
+.col .contact button {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem auto;
+  outline: none;
+  border: none;
+  border: 2px solid rgb(0, 216, 205);
+  border-radius: 8px;
+  background: rgb(0, 48, 46);
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: ghs;
+}
+.col .contact textarea {
+  padding: 0.3rem;
+  width: 95%;
+  margin: 0.7rem 0.4rem;
+  background-color: #ffffff;
+  color: rgb(0, 216, 205);
+  height: 100px;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  font-size: 14px;
+  border: 2px solid rgb(0, 216, 205);
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: ghs;
+}
+.intro {
+  width: 70%;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 0.5rem 0.1rem;
+  text-align: left;
+  justify-content: center;
+  margin: 0.7rem auto;
+}
+.intro p {
+  padding: 0.5rem;
+  font-weight: 900;
+  color: rgb(0, 33, 96);
+  font-size: 1.1rem;
+  word-spacing: 6px;
+  line-height: 1.8rem;
+  font-family: Rusilla;
+  text-transform: lowercase;
+}
+.col .intro h4 {
+  word-spacing: 5px;
+  line-height: 1.8rem;
+}
+.col #me {
+  color: #7b7b7b;
+  font-style: italic;
+  font-weight: 500;
+  font-family: Kollera;
+}
+.side-bar {
+  margin-top: 3.5rem;
+  background: #ffffff;
+  float: left;
+  margin-right: 1rem;
+  margin-left: 0.5rem;
+  position: fixed;
+  z-index: 100;
+  overflow: auto;
+  height: 100vh;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+}
+.main {
+  margin-top: 3.5rem;
+  background: #ffffff;
+  border-radius: 8px;
+  position: relative;
+  width: 70%;
+  float: right;
+  margin-right: 0.3rem;
+  margin-left: 0.7rem;
+  padding: 0.5rem 0.8rem;
+  display: flex;
+}
+.side-bar h2 {
+  margin: 1rem;
+  float: left;
+  color: #00bafc;
+  font-family: ghs;
+  font-weight: bold;
+  border-bottom: 2px solid #00bafc;
+}
+.side-bar #list {
+  margin-bottom: 2.5rem;
+  float: left;
+  text-align: left;
+  align-items: center;
+  width: 100%;
+}
+.side-bar #list li {
+  list-style: none;
+  padding: 0.8rem 1rem;
+  margin-bottom: 5px;
+  width: 100%;
+  border-radius: 8px;
+}
+.side-bar #list li a {
+  text-decoration: none;
+  font-weight: 700;
+  font-family: ghs;
+  color: #1f3137;
+  font-size: 1rem;
+}
+.side-bar #list li:hover {
+  background: #e9e9e9;
+}
+.side-bar #list li a:hover {
+  color: #32caff;
+}
+.main .blog h2 {
+  color: #32caff;
+  padding: 0.3rem 0.7rem;
+  width: 100%;
+}
+.blog {
+  background: #ffffff;
+  border-radius: 8px;
+  width: 100%;
+  margin: 0.6rem 0.3rem;
+}
+.blog p {
+  width: 100%;
+  text-align: left;
+  margin: 0.4rem 0.3rem;
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(70, 70, 70);
+  word-spacing: 5px;
+  line-height: 1.5rem;
+  font-family: ghs;
+}
+@keyframes nav {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 15%;
+  }
+  50% {
+    width: 30%;
+  }
+  100% {
+    width: 70%;
+  }
+}
